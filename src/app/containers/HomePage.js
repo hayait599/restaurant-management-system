@@ -1,11 +1,15 @@
 import React, { Component } from 'react';
 import logo from '../../logo.svg';
+
+import Navbar from '../components/navbar/navbar';
+
 import '../../App.css';
 
 class HomePage extends Component {
   render() {
     return (
       <div className="App">
+        <Navbar></Navbar>
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Welcome to React</h1>
