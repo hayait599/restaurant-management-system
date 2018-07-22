@@ -1,0 +1,17 @@
+.container-app {
+  display: flex;
+  flex: 1;
+  background-color: aqua;
+  align-items: flex-start;
+}
+.right-side {
+    display: flex;
+    flex: 60%;
+    background-color: brown;
+}
+.left-side {
+    flex-direction: row-reverse;
+    display: flex;
+    flex: 40%;
+    background-color: blue
+}

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import { HomePage } from './containers';
+import  HomePage from './containers/HomePage/HomePage';
 
 class App extends Component {
   render() {

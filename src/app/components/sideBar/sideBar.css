@@ -1,0 +1,36 @@
+.container-side-bar {
+    display: flex;
+    flex-direction: column;
+    background-color: #1e1e1e;
+    flex: 0.4;
+    align-self: flex-start;
+    height: 100vh;
+    justify-content: space-between;
+}
+.side-bar-footer {
+    display: flex;
+    flex-direction: column;
+    background-color: blueviolet;
+    height: 30vh;
+}
+hr { 
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    border-style: inset;
+    border-width: 1px;
+    width: 60%;
+    color: #EAEAEA
+}
+.footer-content {
+  
+    display: flex;
+    background-color: chocolate;
+    align-self: center;
+    margin-top: 10%;
+    padding: 10px;
+    width: 200px;
+    height: 200px;
+    text-align: justify;
+    color: #EAEAEA
+}
