@@ -34,13 +34,13 @@ class HomePage extends Component {
                   <div className="  col-2 col-sm">
                      <Navbar/>
                      <div className="scroll">
-                        <Team/> {/* Replace it by team route - Haya*/}
+                        {/* <Team/> Replace it by team route - Haya */}
                         <Switch>
                           <Route path="/home" />
                           <Route path="/restaurent" />
                           <Route path="/menu" />
                           <Route path="/order-online" />
-                          <Route path="/team" Component={Team} />
+                          <Route path="/team" component={Team} />
                           <Route path="/contact" />
                         </Switch>
                   </div>
