@@ -12,6 +12,6 @@
 .left-side {
     flex-direction: row-reverse;
     display: flex;
-    flex: 40%;
+    flex: 20%;
     background-color: blue
 }
