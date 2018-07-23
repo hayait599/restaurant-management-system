@@ -10,7 +10,6 @@
 .side-bar-footer {
     display: flex;
     flex-direction: column;
-    background-color: blueviolet;
     height: 30vh;
 }
 hr { 
@@ -18,18 +17,16 @@ hr {
     margin-top: 0.5em;
     margin-bottom: 0.5em;
     border-style: inset;
-    border-width: 1.5px;
-    width: 70%;
+    border-width: 0.5px;
+    width: 75%;
     color: #EAEAEA
 }
 .footer-content {
     display: flex;
-    background-color: chocolate;
     flex-direction: column;
     align-self: center;
-    margin-top: 5%;
-    width: 80%;
-    height: 85%;
+    width: 90%;
+    height: 60%;
     color: #EAEAEA;
     align-items: center;
     justify-content: center
@@ -38,4 +35,11 @@ hr {
     color: #EAEAEA;
     font: 0.9em sans-serif;
     margin: 2%
+}
+.footer-icons {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    align-self: center; 
+    justify-content: space-around;
 }

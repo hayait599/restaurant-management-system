@@ -8,7 +8,10 @@ import {
  
 function* testFunction() {
   try {
-    yield console.log("started");
+ 
+    
+    yield console.log('error');
+
   } catch (error) {
     yield console.log(error);
   }

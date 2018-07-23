@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import * as FontAwesome from 'react-icons/lib/fa'
 import './sideBar.css'
 
 class sideBarFooter extends Component {
@@ -12,11 +13,11 @@ class sideBarFooter extends Component {
           <div className="footer-content-text">SF , CA  94158</div>
           <div className="footer-content-text">Open everyday 2pm to 12am</div>
         </div>
-        <div>
-          icons
-        </div>
-        <div>
-          text
+        <div className="footer-icons">
+          <FontAwesome.FaFacebook color={"#EAEAEA"} />
+          <FontAwesome.FaFacebook color={"#EAEAEA"} />
+          <FontAwesome.FaFacebook color={"#EAEAEA"} />
+          <FontAwesome.FaFacebook color={"#EAEAEA"} />
         </div>
       </div>
     );
