@@ -2,6 +2,7 @@ import React , { Component } from 'react';
 
 import Member from '../../components/member/member';
 
+import './team.css';
 class Team extends Component {
 
     state = {
@@ -13,19 +14,19 @@ class Team extends Component {
                 photoUrl:'./images/1.jpg'
             },
             {
-                name:'bashar',
+                name:'bashar2',
                 position:'Head Chef',
                 bio:'qewrafewrwfsdgfrgfsdvs ergf ergrgf 3 gsfrdg e gv rgg',
                 photoUrl:'./images/1.jpg'
             },
             {
-                name:'bashar',
+                name:'bashar3',
                 position:'Head Chef',
                 bio:'qewrafewrwfsdgfrgfsdvs ergf ergrgf 3 gsfrdg e gv rgg',
                 photoUrl:'./images/1.jpg'
             },
             {
-                name:'bashar',
+                name:'bashar4',
                 position:'Head Chef',
                 bio:'qewrafewrwfsdgfrgfsdvs ergf ergrgf 3 gsfrdg e gv rgg',
                 photoUrl:'./images/1.jpg'
@@ -34,16 +35,18 @@ class Team extends Component {
     }
 
     render () {
-        var member0 = this.state.team[0]
+       
         return (
             
 
             <div className="Team">
-                <Member name={member0.name}
-                        position={member0.position}
-                        bio={member0.bio} 
-                        url={member0.photoUrl}
-                        />
+            
+               {
+                   this.state.team.map((res, index) => (
+                      <Member key={index} member={res} />
+                   ))
+               }
+                
             </div>
                 
         );

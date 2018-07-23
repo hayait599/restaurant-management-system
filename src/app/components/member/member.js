@@ -1,12 +1,15 @@
 import React from 'react';
 
+import './member.css';
 const member = (props) => (
 
-    <div>
-        <h5>{props.name}</h5> <small>{props.position}</small>
-        <image src={props.url} alt="No photo"></image>
-        <p>{props.bio}</p>
-    </div>
+    <div className="card" >
+  <img className="card-img-top" src={props.member.photoUrl} alt=""/>
+  <div className="card-body">
+    <p className="card-title"><strong>{props.member.name} - {props.member.position}</strong></p>
+    <p className="card-text">{props.member.bio}</p>
+  </div>
+</div>
 
 )
 

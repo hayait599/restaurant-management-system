@@ -7,6 +7,7 @@
 .right-side {
     display: flex;
     flex: 60%;
+    flex-direction: column;
     background-color: brown;
 }
 .left-side {
@@ -14,4 +15,14 @@
     display: flex;
     flex: 20%;
     background-color: blue
+}
+.wid{
+    width: 100px;
+}
+.scroll{
+    height: 1000px;
+    overflow-y: scroll;
+}
+.App{
+    background-color: #505256;
 }
