@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom';
 
 import { Navbar, SideBar } from '../../components';
-import Team from '../team/team';
+import { Menu, Team } from '../../containers';
+
 import './HomePage.css';
 
 
@@ -31,14 +32,14 @@ class HomePage extends Component {
                      <SideBar />
                   </div>
 
-                  <div className="  col-2 col-sm">
+                  <div className=" col-2 col-sm">
                      <Navbar/>
                      <div className="scroll">
                         {/* <Team/> Replace it by team route - Haya */}
                         <Switch>
                           <Route path="/home" />
                           <Route path="/restaurent" />
-                          <Route path="/menu" />
+                          <Route path="/menu" component={Menu}/>
                           <Route path="/order-online" />
                           <Route path="/team" component={Team} />
                           <Route path="/contact" />

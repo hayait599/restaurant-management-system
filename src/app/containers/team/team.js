@@ -30,7 +30,79 @@ class Team extends Component {
                 position:'Head Chef',
                 bio:'qewrafewrwfsdgfrgfsdvs ergf ergrgf 3 gsfrdg e gv rgg',
                 photoUrl:'./images/1.jpg'
-            }
+            },
+            {
+                name:'bashar3',
+                position:'Head Chef',
+                bio:'qewrafewrwfsdgfrgfsdvs ergf ergrgf 3 gsfrdg e gv rgg',
+                photoUrl:'./images/1.jpg'
+            },
+            {
+                name:'bashar3',
+                position:'Head Chef',
+                bio:'qewrafewrwfsdgfrgfsdvs ergf ergrgf 3 gsfrdg e gv rgg',
+                photoUrl:'./images/1.jpg'
+            },
+            {
+                name:'bashar3',
+                position:'Head Chef',
+                bio:'qewrafewrwfsdgfrgfsdvs ergf ergrgf 3 gsfrdg e gv rgg',
+                photoUrl:'./images/1.jpg'
+            },
+            {
+                name:'bashar3',
+                position:'Head Chef',
+                bio:'qewrafewrwfsdgfrgfsdvs ergf ergrgf 3 gsfrdg e gv rgg',
+                photoUrl:'./images/1.jpg'
+            },
+            {
+                name:'bashar3',
+                position:'Head Chef',
+                bio:'qewrafewrwfsdgfrgfsdvs ergf ergrgf 3 gsfrdg e gv rgg',
+                photoUrl:'./images/1.jpg'
+            },
+            {
+                name:'bashar3',
+                position:'Head Chef',
+                bio:'qewrafewrwfsdgfrgfsdvs ergf ergrgf 3 gsfrdg e gv rgg',
+                photoUrl:'./images/1.jpg'
+            },
+            {
+                name:'bashar3',
+                position:'Head Chef',
+                bio:'qewrafewrwfsdgfrgfsdvs ergf ergrgf 3 gsfrdg e gv rgg',
+                photoUrl:'./images/1.jpg'
+            },
+            {
+                name:'bashar3',
+                position:'Head Chef',
+                bio:'qewrafewrwfsdgfrgfsdvs ergf ergrgf 3 gsfrdg e gv rgg',
+                photoUrl:'./images/1.jpg'
+            },
+            {
+                name:'bashar3',
+                position:'Head Chef',
+                bio:'qewrafewrwfsdgfrgfsdvs ergf ergrgf 3 gsfrdg e gv rgg',
+                photoUrl:'./images/1.jpg'
+            },
+            {
+                name:'bashar3',
+                position:'Head Chef',
+                bio:'qewrafewrwfsdgfrgfsdvs ergf ergrgf 3 gsfrdg e gv rgg',
+                photoUrl:'./images/1.jpg'
+            },
+            {
+                name:'bashar3',
+                position:'Head Chef',
+                bio:'qewrafewrwfsdgfrgfsdvs ergf ergrgf 3 gsfrdg e gv rgg',
+                photoUrl:'./images/1.jpg'
+            },
+            {
+                name:'bashar3',
+                position:'Head Chef',
+                bio:'qewrafewrwfsdgfrgfsdvs ergf ergrgf 3 gsfrdg e gv rgg',
+                photoUrl:'./images/1.jpg'
+            },
         ]
     }
 

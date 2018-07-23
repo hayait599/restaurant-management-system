@@ -19,10 +19,8 @@
 .wid{
     width: 100px;
 }
-.scroll{
-    height: 1000px;
-    overflow-y: scroll;
-}
+
 .App{
     background-color: #505256;
+    font-family: "Times New Roman", Times, serif;
 }
