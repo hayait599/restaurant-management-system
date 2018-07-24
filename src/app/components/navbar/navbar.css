@@ -8,4 +8,11 @@
 }
 .toggle{
     background-color: aliceblue;
+    border-radius: 10px;
+}
+
+@media(max-width: 500px){
+    .navbar{
+        border: 2px solid black;
+    }
 }
