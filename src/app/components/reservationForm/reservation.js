@@ -14,10 +14,11 @@ class Reservation extends Component {
       <div className="container">
         <div className="title"> RESERVATIONS </div>
         <div className="form-content">
+          <br />
+          <input className="custom-dropdown" type="date" name="bday" />
+          <br />
           <DropDown title={"Party size"} />
           <br />
-        
-          <input className="custom-dropdown" type="date" name="bday" />
         </div>
       </div>
     );
