@@ -64,3 +64,13 @@ button {
     padding: 3% 5%;
     outline:none;
 }
+input {
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    color: #EAEAEA;
+    border: 2px solid #EAEAEA;;
+    cursor:pointer;
+    overflow: hidden;
+    padding: 3% 5%;
+    outline:none;
+}

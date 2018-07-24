@@ -32,7 +32,7 @@ class DropDown extends Component {
   render() {
     return (
       <div className="dropdown">
-        <button  className=" custom-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+        <button  className="custom-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
           <div className="dropdown-title " >
             {this.state.dropdownTitle}
             <i className="fa arrow">&#xf107;</i>
