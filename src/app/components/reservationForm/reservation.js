@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import DropDown from './DropDown';
+import DropDown from './dropDown';
 import './reservation.css'
 
 class Reservation extends Component {
@@ -14,9 +14,8 @@ class Reservation extends Component {
       <div className="container">
         <div className="title"> RESERVATIONS </div>
         <div className="form-content">
-          <DropDown title={"Date"} />
-          <DropDown title={"Time"} />
-          <DropDown title={"Party size"}/>
+          <DropDown title={"Party size"} />
+ 
         </div>
       </div>
     );

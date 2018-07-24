@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import SideBarFooter  from './sideBarFooter';
+import Header from './header';
 import { Reservation } from './../index';
 import './sideBar.css'
 
@@ -13,7 +14,8 @@ class SideBar extends Component {
   render() {
     return (
       <div className="container-side-bar">
-        <Reservation />
+        
+        <Header />
         {this.renderContent()}
         <SideBarFooter />
       </div>

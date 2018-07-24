@@ -12,6 +12,11 @@
     flex-direction: column;
     height: 30vh;
 }
+.side-bar-header {
+    display: flex;
+    flex-direction: column;
+    height: 30vh;  
+}
 hr { 
     display: block;
     margin-top: 0.5em;
@@ -27,6 +32,16 @@ hr {
     align-self: center;
     width: 90%;
     height: 60%;
+    color: #EAEAEA;
+    align-items: center;
+    justify-content: center
+}
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 90%;
+    height: 40%;
     color: #EAEAEA;
     align-items: center;
     justify-content: center
