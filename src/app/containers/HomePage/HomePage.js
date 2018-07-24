@@ -25,14 +25,14 @@ class HomePage extends Component {
             </div>
             <div className="row">
             
-                  <div className="col-2 col-sm-3">
+                  <div className=" col-sm-2">
                   </div>
 
-                  <div className="col-2 col-sm-2">
+                  <div className=" col-sm-2">
                      <SideBar />
                   </div>
 
-                  <div className=" col-2 col-sm">
+                  <div className=" col-sm">
                      <Navbar/>
                      <div className="scroll">
                         {/* <Team/> Replace it by team route - Haya */}
