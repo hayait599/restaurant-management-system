@@ -46,29 +46,7 @@ class HomePage extends Component {
                         </Switch>
                   </div>
                   </div>
-
             </div>
-        {/* <div className="container-app">
-          <div className="left-side">
-            <SideBar />
-          </div>
-          <div className="right-side"> <Navbar></Navbar>
-         
-          <div className="wid">
-            <Team/>
-            
-              <Switch>
-                    <Route path="/home" />
-                    <Route path="/restaurent" />
-                    <Route path="/menu" />
-                    <Route path="/order-online" />
-                    <Route path="/team" Component={Team} />
-                    <Route path="/contact" />
-              </Switch>
-           
-            </div>
-        </div>
-        </div> */}
       </div>
     );
   }
