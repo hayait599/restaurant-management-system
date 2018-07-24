@@ -1,112 +1,13 @@
-import React , { Component } from 'react';
+import React  from 'react';
 
 import Member from '../../components/member/member';
 
+import * as data from '../../../app/models/team.json';
 import './team.css';
-class Team extends Component {
+const Team = () => {
 
-    state = {
-        team:[
-            {
-                name:'bashar',
-                position:'Head Chef',
-                bio:'qewrafewrwfsdgfrgfsdvs ergf ergrgf 3 gsfrdg e gv rgg',
-                photoUrl:'./images/1.jpg'
-            },
-            {
-                name:'bashar2',
-                position:'Head Chef',
-                bio:'qewrafewrwfsdgfrgfsdvs ergf ergrgf 3 gsfrdg e gv rgg',
-                photoUrl:'./images/1.jpg'
-            },
-            {
-                name:'bashar3',
-                position:'Head Chef',
-                bio:'qewrafewrwfsdgfrgfsdvs ergf ergrgf 3 gsfrdg e gv rgg',
-                photoUrl:'./images/1.jpg'
-            },
-            {
-                name:'bashar4',
-                position:'Head Chef',
-                bio:'qewrafewrwfsdgfrgfsdvs ergf ergrgf 3 gsfrdg e gv rgg',
-                photoUrl:'./images/1.jpg'
-            },
-            {
-                name:'bashar3',
-                position:'Head Chef',
-                bio:'qewrafewrwfsdgfrgfsdvs ergf ergrgf 3 gsfrdg e gv rgg',
-                photoUrl:'./images/1.jpg'
-            },
-            {
-                name:'bashar3',
-                position:'Head Chef',
-                bio:'qewrafewrwfsdgfrgfsdvs ergf ergrgf 3 gsfrdg e gv rgg',
-                photoUrl:'./images/1.jpg'
-            },
-            {
-                name:'bashar3',
-                position:'Head Chef',
-                bio:'qewrafewrwfsdgfrgfsdvs ergf ergrgf 3 gsfrdg e gv rgg',
-                photoUrl:'./images/1.jpg'
-            },
-            {
-                name:'bashar3',
-                position:'Head Chef',
-                bio:'qewrafewrwfsdgfrgfsdvs ergf ergrgf 3 gsfrdg e gv rgg',
-                photoUrl:'./images/1.jpg'
-            },
-            {
-                name:'bashar3',
-                position:'Head Chef',
-                bio:'qewrafewrwfsdgfrgfsdvs ergf ergrgf 3 gsfrdg e gv rgg',
-                photoUrl:'./images/1.jpg'
-            },
-            {
-                name:'bashar3',
-                position:'Head Chef',
-                bio:'qewrafewrwfsdgfrgfsdvs ergf ergrgf 3 gsfrdg e gv rgg',
-                photoUrl:'./images/1.jpg'
-            },
-            {
-                name:'bashar3',
-                position:'Head Chef',
-                bio:'qewrafewrwfsdgfrgfsdvs ergf ergrgf 3 gsfrdg e gv rgg',
-                photoUrl:'./images/1.jpg'
-            },
-            {
-                name:'bashar3',
-                position:'Head Chef',
-                bio:'qewrafewrwfsdgfrgfsdvs ergf ergrgf 3 gsfrdg e gv rgg',
-                photoUrl:'./images/1.jpg'
-            },
-            {
-                name:'bashar3',
-                position:'Head Chef',
-                bio:'qewrafewrwfsdgfrgfsdvs ergf ergrgf 3 gsfrdg e gv rgg',
-                photoUrl:'./images/1.jpg'
-            },
-            {
-                name:'bashar3',
-                position:'Head Chef',
-                bio:'qewrafewrwfsdgfrgfsdvs ergf ergrgf 3 gsfrdg e gv rgg',
-                photoUrl:'./images/1.jpg'
-            },
-            {
-                name:'bashar3',
-                position:'Head Chef',
-                bio:'qewrafewrwfsdgfrgfsdvs ergf ergrgf 3 gsfrdg e gv rgg',
-                photoUrl:'./images/1.jpg'
-            },
-            {
-                name:'bashar3',
-                position:'Head Chef',
-                bio:'qewrafewrwfsdgfrgfsdvs ergf ergrgf 3 gsfrdg e gv rgg',
-                photoUrl:'./images/1.jpg'
-            },
-        ]
-    }
 
-    render () {
+    
        
         return (
             
@@ -114,7 +15,7 @@ class Team extends Component {
             <div className="Team">
             
                {
-                   this.state.team.map((res, index) => (
+                   data.map((res, index) => (
                       <Member key={index} member={res} />
                    ))
                }
@@ -122,7 +23,7 @@ class Team extends Component {
             </div>
                 
         );
-    }
+    
 }
 
 export default Team;

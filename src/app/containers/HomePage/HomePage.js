@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom';
 
 import { Navbar, SideBar } from '../../components';
-import { Menu, Team } from '../../containers';
+import { Menu, Team, Contact} from '../../containers';
 
 import './HomePage.css';
 
@@ -42,7 +42,7 @@ class HomePage extends Component {
                           <Route path="/menu" component={Menu}/>
                           <Route path="/order-online" />
                           <Route path="/team" component={Team} />
-                          <Route path="/contact" />
+                          <Route path="/contact" component={Contact} />
                         </Switch>
                   </div>
                   </div>
