@@ -10,27 +10,51 @@
 .side-bar-footer {
     display: flex;
     flex-direction: column;
-    background-color: blueviolet;
     height: 30vh;
+}
+.side-bar-header {
+    display: flex;
+    flex-direction: column;
+    height: 30vh;  
 }
 hr { 
     display: block;
     margin-top: 0.5em;
     margin-bottom: 0.5em;
     border-style: inset;
-    border-width: 1px;
-    width: 60%;
+    border-width: 0.5px;
+    width: 75%;
     color: #EAEAEA
 }
 .footer-content {
-  
     display: flex;
-    background-color: chocolate;
+    flex-direction: column;
     align-self: center;
-    margin-top: 10%;
-    padding: 10px;
-    width: 200px;
-    height: 200px;
-    text-align: justify;
-    color: #EAEAEA
+    width: 90%;
+    height: 60%;
+    color: #EAEAEA;
+    align-items: center;
+    justify-content: center
+}
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 90%;
+    height: 40%;
+    color: #EAEAEA;
+    align-items: center;
+    justify-content: center
+}
+.footer-content-text {
+    color: #EAEAEA;
+    font: 0.9em sans-serif;
+    margin: 2%
+}
+.footer-icons {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    align-self: center; 
+    justify-content: space-around;
 }
