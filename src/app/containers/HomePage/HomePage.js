@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom';
 import { Navbar, SideBar } from '../../components';
-import { Menu, Team, Contact} from '../../containers';
+import { Menu, Team, Contact } from '../../containers';
 
 import './HomePage.css';
 
