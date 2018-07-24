@@ -1,7 +1,6 @@
 
 import React, { Component } from 'react';
 import './reservation.css'
-import { stat } from 'fs';
 
 class DropDown extends Component {
 
