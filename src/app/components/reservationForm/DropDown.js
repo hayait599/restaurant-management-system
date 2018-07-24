@@ -26,7 +26,7 @@ class DropDown extends Component {
     ]
     return data.map((item, key) => {
       return (
-        <a key={key} className="dropdown-item" href="#" onClick={this.handleClick.bind(this)}>{item}</a>
+        <a key={key} className="dropdown-item" onClick={this.handleClick.bind(this)}>{item}</a>
       );
     })
   }

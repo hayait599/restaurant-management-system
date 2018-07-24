@@ -24,7 +24,7 @@ class HomePage extends Component {
                   <Route path="/menu" component={Menu} />
                   <Route path="/order-online" />
                   <Route path="/team" component={Team} />
-                  <Route path="/contact" />
+                  <Route path="/contact" component={Contact} />
                 </Switch>
               </div>
             </div>

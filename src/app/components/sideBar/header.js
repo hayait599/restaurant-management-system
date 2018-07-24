@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import * as FontAwesome from 'react-icons/lib/fa'
 import './sideBar.css'
 
 class Header extends Component {
