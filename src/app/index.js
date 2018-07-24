@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { HomePage } from '../app/containers/'
+import './../index.css'
 
 class App extends Component {
 
@@ -11,7 +12,9 @@ class App extends Component {
   render() {
     return (
       <BrowserRouter>
-        <HomePage />
+        <div className="bg">
+          <HomePage />
+        </div>
       </BrowserRouter>
     );
   }
