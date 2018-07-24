@@ -15,8 +15,7 @@ const member = (props) => (
           </div>
         </div>
       </div>
-    </div>
-  </div>
+
 
 )
 
