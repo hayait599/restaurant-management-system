@@ -64,6 +64,16 @@ button {
     padding: 3% 5%;
     outline:none;
 }
+.submit-button {
+    background-color: #EAEAEA;
+    background-repeat:no-repeat;
+    border: 2px solid #EAEAEA;;
+    cursor:pointer;
+    overflow: hidden;
+    padding: 3% 5%;
+    outline:none;
+    width: 100%
+}
 input {
     background-color: Transparent;
     background-repeat:no-repeat;

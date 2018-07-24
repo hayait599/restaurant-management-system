@@ -15,14 +15,7 @@ class DropDown extends Component {
     this.setState({ dropdownTitle: e.target.innerHTML })
   }
   renderItems() {
-    const data = [
-      "1 person",
-      "2 people",
-      "3 people",
-      "4 people",
-      "5 people",
-      "6 people",
-    ]
+    const data = this.props.data;
     return data.map((item, key) => {
       return (
         <a key={key} className="dropdown-item" href="#" onClick={this.handleClick.bind(this)}>{item}</a>
