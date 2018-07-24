@@ -1,0 +1,26 @@
+
+   [
+    {
+        "name":"Skinny Orange Chicken",
+        "price":"19.99",
+        "photoUrl":"./images/meals/2.jpg"
+    },
+    {
+        "name":"Cheesy Tex-Mex Cauli Rice",
+        "price":"74.99",
+        "photoUrl":"./images/meals/3.jpg"
+    },
+    {
+        "name":"Buffalo Chicken Stuffed Peppers",
+        "price":"35.25",
+        "photoUrl":"./images/meals/4.jpg"
+    },
+    {
+        "name":"Rainbow Stir-Fry",
+        "price":"199.99",
+        "photoUrl":"./images/meals/5.jpg"
+    }
+   
+]
+
+

@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom';
 import { Navbar, SideBar } from '../../components';
-import { Menu, Team } from '../../containers';
+import { Menu, Team, Contact} from '../../containers';
+
 import './HomePage.css';
 
 class HomePage extends Component {
@@ -33,7 +34,29 @@ class HomePage extends Component {
                 <Route path="/contact" />
               </Switch>
             </div>
-          </div>
+            <div className="row">
+            
+                  <div className=" col-sm-2">
+                  </div>
+
+                  <div className=" col-sm-2">
+                     <SideBar />
+                  </div>
+
+                  <div className=" col-sm">
+                     <Navbar/>
+                     <div className="scroll">
+                        {/* <Team/> Replace it by team route - Haya */}
+                        <Switch>
+                          <Route path="/home" />
+                          <Route path="/restaurent" />
+                          <Route path="/menu" component={Menu}/>
+                          <Route path="/order-online" />
+                          <Route path="/team" component={Team} />
+                          <Route path="/contact" component={Contact} />
+                        </Switch>
+                  </div>
+                  </div>
 
         </div>
         {/* <div className="container-app">

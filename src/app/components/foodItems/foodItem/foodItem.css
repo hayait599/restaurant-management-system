@@ -4,3 +4,20 @@
     background: inherit;
     color: white;
 }
+img.itemImg{
+    width: 200px;
+    height: 300px;
+}
+li.item{
+    background-color: #505256;
+    border-left: 6px solid #ccc;
+    border-color: #2196F3;
+
+}
+.info{
+    text-align: left;
+    font-size: 30px;
+}
+.img{
+    text-align: left;
+}

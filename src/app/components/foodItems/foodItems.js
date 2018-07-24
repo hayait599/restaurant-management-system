@@ -1,18 +1,17 @@
 import React from 'react';
 import { FoodItem } from '../../components';
 
+import * as meals from '../../../app/models/items'
 import './foodItems.css';
 const foodItems = (props) => (
     <div className="foodItems">
-        <h1><p>foodItems</p></h1>
         <ul className="list-group">
-            <FoodItem itemName="Fanta" price="$5.0"/>
-            <FoodItem itemName="Meat" price="$5.0"/>
-            <FoodItem itemName="Meat" price="$0.5"/>
-            <FoodItem itemName="Meat" price="$0.5"/>
-            <FoodItem itemName="Meat" price="$0.5"/>
-            <FoodItem itemName="Meat" price="$0.5"/>
-            <FoodItem itemName="Grell" price="$0.5"/>
+           
+            {
+                meals.map((res, i) => (
+                    <FoodItem key={i} itemName={res.name} price={"$"+res.price} img={res.photoUrl}/>
+                ))
+            }
         </ul>
     </div>
 );
