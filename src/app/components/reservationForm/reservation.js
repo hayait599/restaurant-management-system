@@ -15,11 +15,9 @@ class Reservation extends Component {
         <div className="title"> RESERVATIONS </div>
         <div className="form-content">
           <DropDown title={"Party size"} />
- 
         </div>
       </div>
     );
   }
 }
-
 export default Reservation;

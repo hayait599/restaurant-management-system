@@ -43,7 +43,7 @@
     background-color: #3d3c3c;
     border: 0.5px solid #5b94ff;
     color: #EAEAEA;
-    width: 100%; 
+    /* width: 100%;  */
     align-items: center;
 }
 .dropdown-item {

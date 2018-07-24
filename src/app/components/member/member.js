@@ -17,7 +17,6 @@ const member = (props) => (
       </div>
 
 
-
 )
 
 export default member;
