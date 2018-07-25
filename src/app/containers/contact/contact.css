@@ -1,5 +1,70 @@
 .contact{
-    background: inherit;
-    padding: 10px;
+    background: #1e1e1e;
+    padding: 30px;
     margin: 20px;
+    color: aliceblue;
+    width: 60%;
+}
+.slide{
+    width: 100%;
+    height: 250px;
+}
+.slideImg{
+    width: 100%;
+    height: 200px;
+}
+.discription{
+    z-index: 5;
+    position: absolute;
+    padding: 20px;
+   display: none;
+}
+.backDiv {
+    width: 85%;
+    height: 70px;
+    background: #1e1e1e;
+    z-index: 4;
+    position: absolute;
+    opacity: .8;
+    display: none;
+
+}
+.slide:hover + .discription{
+    display: block;
+}
+.submitButton{
+    text-align: right;
+}
+.form-group{
+    margin-top: 30px;
+}
+.inputContact{
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    color: #EAEAEA;
+    border: 2px solid #EAEAEA;
+    cursor: text;
+    overflow: hidden;
+     padding: 10px;; 
+    outline:none;
+    
+}
+.center {
+    text-align: center;
+    cursor: pointer;
+}
+.center:hover {
+    border: 2px solid #EAEAEA;
+}
+@media(max-width: 500px){
+    .slide{
+        height: 200px;
+    }
+    .contact {
+        width: 90%;
+    }
+    .center{
+        display: none;
+    }
+
 }

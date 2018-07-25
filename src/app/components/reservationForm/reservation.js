@@ -25,9 +25,9 @@ class Reservation extends Component {
         <div className="title"> RESERVATIONS </div>
         <div className="form-content">
           <br />
-          <input className="custom-dropdown" type="date" name="bday" />
+          <input className=" input custom-dropdown" type="date" name="bday" />
           <br />
-          <input className="custom-dropdown" type="time" name="usr_time" />
+          <input className=" input custom-dropdown" type="time" name="usr_time" />
           <br />
           <DropDown data={timeData} title={"Party size"} />
           <br />

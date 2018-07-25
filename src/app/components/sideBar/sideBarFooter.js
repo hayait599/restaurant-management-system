@@ -15,9 +15,9 @@ class sideBarFooter extends Component {
         </div>
         <div className="footer-icons">
           <FontAwesome.FaFacebook color={"#EAEAEA"} />
-          <FontAwesome.FaFacebook color={"#EAEAEA"} />
-          <FontAwesome.FaFacebook color={"#EAEAEA"} />
-          <FontAwesome.FaFacebook color={"#EAEAEA"} />
+          <FontAwesome.FaInstagram color={"#EAEAEA"} />
+          <FontAwesome.FaLinkedin color={"#EAEAEA"} />
+          <FontAwesome.FaSnapchat color={"#EAEAEA"} />
         </div>
       </div>
     );

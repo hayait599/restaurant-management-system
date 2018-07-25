@@ -6,20 +6,16 @@ import * as data from '../../../app/models/team.json';
 import './team.css';
 const Team = () => {
 
-
+ var members =  data.map((res, index) => (
+    <Member key={index} member={res} ></Member>
+ ))
     
        
         return (
             
 
             <div className="Team">
-            
-               {
-                   data.map((res, index) => (
-                      <Member key={index} member={res} />
-                   ))
-               }
-                
+                  {members}              
             </div>
                 
         );

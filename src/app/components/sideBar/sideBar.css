@@ -7,17 +7,20 @@
     height: 100vh;
     justify-content: space-between;
 }
+
 .side-bar-footer {
     display: flex;
     flex-direction: column;
     height: 30vh;
 }
+
 .side-bar-header {
     display: flex;
     flex-direction: column;
-    height: 30vh;  
+    height: 30vh;
 }
-hr { 
+
+hr {
     display: block;
     margin-top: 0.5em;
     margin-bottom: 0.5em;
@@ -26,6 +29,7 @@ hr {
     width: 75%;
     color: #EAEAEA
 }
+
 .footer-content {
     display: flex;
     flex-direction: column;
@@ -36,6 +40,7 @@ hr {
     align-items: center;
     justify-content: center
 }
+
 .header-content {
     display: flex;
     flex-direction: column;
@@ -46,15 +51,21 @@ hr {
     align-items: center;
     justify-content: center
 }
+
 .footer-content-text {
     color: #EAEAEA;
     font: 0.9em sans-serif;
     margin: 2%
 }
+
 .footer-icons {
     display: flex;
     flex-direction: row;
     width: 70%;
-    align-self: center; 
+    align-self: center;
     justify-content: space-around;
+}
+
+FontAwesome {
+    cursor: pointer;
 }

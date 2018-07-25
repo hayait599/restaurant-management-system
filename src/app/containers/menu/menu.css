@@ -1,6 +1,11 @@
 .menu{
     margin: 10px;
     padding: 20px;
-    background-color: #505256;
-    width: inherit;
+    background-color: #1e1e1e;
+    width: 60%
+}
+@media(max-width: 500px){
+    .menu {
+        width: 90%;
+    }
 }
