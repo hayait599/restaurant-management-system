@@ -1,26 +1,21 @@
 .container-app {
   display: flex;
   flex: 1;
-  background-color: aqua;
   align-items: flex-start;
 }
 .right-side {
     display: flex;
     flex: 60%;
     flex-direction: column;
-    background-color: brown;
 }
 .left-side {
     flex-direction: row-reverse;
     display: flex;
     flex: 20%;
-    background-color: blue
 }
 .wid{
     width: 100px;
 }
-
 .App{
-    background-color: #505256;
     font-family: "Times New Roman", Times, serif;
 }
