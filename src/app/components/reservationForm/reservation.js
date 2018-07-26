@@ -9,7 +9,6 @@ class Reservation extends Component {
       <div />
     );
   }
-
   render() {
     const timeData = [
       "1 person",
@@ -19,7 +18,6 @@ class Reservation extends Component {
       "5 people",
       "6 people",
     ]
-
     return (
       <div className="container">
         <div className="title"> RESERVATIONS </div>
@@ -33,7 +31,6 @@ class Reservation extends Component {
           <br />
           <button className="submit-button" type="button">Book Now</button>
         </div>
-
       </div>
     );
   }

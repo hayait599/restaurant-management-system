@@ -1,21 +1,27 @@
 .container-app {
-  display: flex;
-  flex: 1;
-  align-items: flex-start;
+    display: flex;
+    flex: 1;
+    justify-content:  flex-end;
+    flex-direction: row;
 }
 .right-side {
     display: flex;
-    flex: 60%;
+    flex: 0.6;
     flex-direction: column;
 }
 .left-side {
     flex-direction: row-reverse;
     display: flex;
-    flex: 20%;
+    flex: 0.4;
 }
 .wid{
     width: 100px;
 }
 .App{
     font-family: "Times New Roman", Times, serif;
+
 }
+.col-sm-8 {
+ background-color: blue
+}
+ 

@@ -1,9 +1,15 @@
 .navbar{
-    background-color: #505256;
     color: white;
     padding-top: 50px;
+    width: 100%;
+}
+.nav-link {
+    color: white; 
 }
 .link{
+    color: white;
+}
+.nav-link:hover {
     color: white;
 }
 .toggle{
@@ -15,4 +21,10 @@
     .navbar{
         border: 2px solid black;
     }
+}
+.custom-nav {
+    display: flex;
+    flex-direction: row;
+    padding-left: 1%;
+    padding-right: 2%
 }

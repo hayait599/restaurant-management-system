@@ -7,6 +7,7 @@ body {
 .bg{
   background-image: url("https://atelierdosul.com/content/uploads/2017/11/services-menudesign-gallery-hd-1920x1080_0000_wine-box_2.jpg");
   background-attachment: fixed;
+  background-size: cover;
 }
 
 

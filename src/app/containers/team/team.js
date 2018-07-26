@@ -1,4 +1,4 @@
-import React  from 'react';
+import React from 'react';
 
 import Member from '../../components/member/member';
 
@@ -7,23 +7,23 @@ import './team.css';
 const Team = () => {
 
 
-    
-       
-        return (
-            
 
-            <div className="Team">
-            
-               {
-                   data.map((res, index) => (
-                      <Member key={index} member={res} />
-                   ))
-               }
-                
-            </div>
-                
-        );
-    
+
+    return (
+
+
+        <div className="Team">
+
+            {/* {
+                data.map((res, index) => (
+                    <Member key={index} member={res} />
+                ))
+            } */}
+
+        </div>
+
+    );
+
 }
 
 export default Team;
