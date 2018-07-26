@@ -20,7 +20,7 @@ class Content extends Component {
             <Reservation />
           </div>
         )
-        break;
+        // break;
       case '/restaurant':
         return (
           <div className="content">

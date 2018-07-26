@@ -33,7 +33,7 @@ class contact extends Component {
   render(){
    return (
   <div className="">
-    {/* <h1>Contact</h1>
+     <h1>Contact</h1>
     <div className="slide">
       <img className="slideImg"  src={"./images/slides/"+this.state.imgI+".jpg"} alt="" />  
       <div className="row">
@@ -64,7 +64,7 @@ class contact extends Component {
           <input className="inputContact" type="submit" value="Submit" />
         </div>
       </div>
-   </form> */}
+   </form> 
 
   </div>
 );
