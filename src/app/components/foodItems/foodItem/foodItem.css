@@ -5,18 +5,16 @@
     color: white;
 }
 img.itemImg{
-    width: 200px;
-    height: 300px;
+    width: 100px;
+    height: 150px;
 }
 li.item{
-    background-color: #505256;
-    border-left: 6px solid #ccc;
-    border-color: #2196F3;
-
+   
+    border-bottom: 1px solid #ccc;
 }
 .info{
     text-align: left;
-    font-size: 30px;
+    font-size: 20px;
 }
 .img{
     text-align: left;

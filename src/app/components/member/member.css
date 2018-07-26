@@ -3,10 +3,12 @@
     float: left;
     padding: 10px;
     margin: 10px;
-    font-size: 13px;
-    background-color: #505256;
+    font-size: 20px;
+    background-color: #1e1e1e;
     color: white;
 }
-.card:hover{
-    background-color: #6a6c70
+@media(max-width: 500px){
+    .card {
+        width: 50vh;
+    }
 }
