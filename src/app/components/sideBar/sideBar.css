@@ -9,24 +9,7 @@
     min-height: 100vh;
     justify-content: space-between;
 }
-<<<<<<< HEAD
 hr { 
-=======
-
-.side-bar-footer {
-    display: flex;
-    flex-direction: column;
-    height: 30vh;
-}
-
-.side-bar-header {
-    display: flex;
-    flex-direction: column;
-    height: 30vh;
-}
-
-hr {
->>>>>>> c97f19f9e24b8645097b8d8e23b35e798642b832
     display: block;
     margin-top: 0.5em;
     margin-bottom: 0.5em;

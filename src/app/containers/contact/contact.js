@@ -32,7 +32,7 @@ class contact extends Component {
   }
   render(){
    return (
-  <div className="contact">
+  <div className="">
     {/* <h1>Contact</h1>
     <div className="slide">
       <img className="slideImg"  src={"./images/slides/"+this.state.imgI+".jpg"} alt="" />  
