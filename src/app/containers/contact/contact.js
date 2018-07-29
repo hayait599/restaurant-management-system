@@ -1,5 +1,4 @@
 import React ,{ Component }from 'react';
-import * as FontAwesome from 'react-icons/lib/fa'
 
 import './contact.css';
 
@@ -27,7 +26,10 @@ class contact extends Component {
       }
   }
   componentDidMount = () => {
+    
     setInterval(this.increaseIHandler, 3000);
+  }
+  componentWillMount(){
     
   }
   render(){
@@ -36,14 +38,6 @@ class contact extends Component {
      <h1>Contact</h1>
     <div className="slide">
       <img className="slideImg"  src={"./images/slides/"+this.state.imgI+".jpg"} alt="" />  
-      <div className="row">
-          <div onClick={this.increaseIHandler.bind(this)} className=" center col-sm">
-          <h1><FontAwesome.FaAngleLeft/></h1> 
-          </div>
-          <div onClick={this.decreaseHandler.bind(this)}  className=" center col-sm">
-          <h1><FontAwesome.FaAngleRight/></h1> 
-          </div>
-      </div>
     </div>
   <hr/>
     <form >
