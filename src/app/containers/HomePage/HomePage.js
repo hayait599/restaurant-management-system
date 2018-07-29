@@ -9,7 +9,6 @@ class HomePage extends Component {
   render() {
     return (
       <div className="App ">
-
         <div className="container-app">
           <div className="left-side">
           <SideBar />

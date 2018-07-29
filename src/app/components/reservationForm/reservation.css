@@ -60,7 +60,7 @@ button {
     border: 2px solid #EAEAEA;;
     cursor:pointer;
     overflow: hidden;
-    padding: 3% 5%;
+    /* padding: 3% 5%; */
     outline:none;
 }
 .submit-button {
@@ -80,6 +80,6 @@ button {
     border: 2px solid #EAEAEA;;
     cursor:pointer;
     overflow: hidden;
-    padding: 3% 5%;
+    /* padding: 3% 5%; */
     outline:none;
 }
