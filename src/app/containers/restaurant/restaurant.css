@@ -1,0 +1,7 @@
+.restaurant-container {
+    background-color: blueviolet;
+    display: flex;
+    width: 50%;
+
+    height: 100%;
+}

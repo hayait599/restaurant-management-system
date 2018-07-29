@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom';
 import { Navbar, SideBar } from '../../components';
-import { Menu, Team, Contact } from '../../containers';
-
+import { Menu, Team, Contact, Restaurant } from '../../containers';
+ 
 import './HomePage.css';
+
 
 class HomePage extends Component {
   render() {
@@ -19,7 +20,7 @@ class HomePage extends Component {
               <div className="container-app">
                 <Switch>
                   <Route path="/home" />
-                  <Route path="/restaurent" />
+                  <Route path="/restaurant" component={Restaurant}/>
                   <Route path="/menu" component={Menu} />
                   <Route path="/order-online" />
                   <Route path="/team" component={Team} />
