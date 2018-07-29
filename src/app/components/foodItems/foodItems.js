@@ -1,18 +1,23 @@
 import React, { Component } from 'react';
 import { FoodItem } from '../../components';
 import { connect } from 'react-redux'; 
-import { getItems } from './../../actions';
+import { getItems, storeSelectedItem} from './../../actions';
 
 import './foodItems.css';
 
 
 class foodItems extends Component {
-
     componentDidMount = () => {
       this.props.getItems();
     }
-    
+    getItemHandler(i) {
+      this.props.storeSelectedItem(this.props.t[i]);
+
+    }
         render() {
+            if(this.props.selected){
+                console.log(this.props.selected);
+            }
             const items = this.props.t
             var food;
             if(items.length >0 ){
@@ -24,9 +29,10 @@ class foodItems extends Component {
     <div className="foodItems">
         <ul>
         { food? 
-                food.map((res, i) => (
-                    <FoodItem key={i} item={res}/>
-                ))
+                food.map((res, index) => {
+                   return <FoodItem key={index} item={res} order={this.props.order} click={() => this.getItemHandler(index)}/>
+                }
+                )
                 : null
             }
         </ul>
@@ -37,8 +43,9 @@ class foodItems extends Component {
 
 const mapStateToProps = (state) =>{
     return {
-        t: state.itemsState
+        t: state.itemsState,
+        selected: state.selectedItem
     }
 }
 
-export default connect(mapStateToProps, { getItems }) (foodItems);
+export default connect(mapStateToProps, { getItems, storeSelectedItem  }) (foodItems);

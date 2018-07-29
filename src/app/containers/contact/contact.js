@@ -34,7 +34,7 @@ class contact extends Component {
   }
   render(){
    return (
-  <div className="">
+  <div className="contact">
      <h1>Contact</h1>
     <div className="slide">
       <img className="slideImg"  src={"./images/slides/"+this.state.imgI+".jpg"} alt="" />  
@@ -52,7 +52,7 @@ class contact extends Component {
           <input className="inputContact" type="email" name="subject" placeholder="Subject"/>
         </div>
         <div className="form-group">
-          <textarea  className="inputContact" rows="9" cols="30" name="message" placeholder="Message"/>
+          <textarea  className="inputContact" rows="9" cols="50" name="message" placeholder="Message"/>
         </div>
         <div className="submitButton">
           <input className="inputContact" type="submit" value="Submit" />
