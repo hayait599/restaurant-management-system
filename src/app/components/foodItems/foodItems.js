@@ -1,19 +1,44 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { FoodItem } from '../../components';
+import { connect } from 'react-redux'; 
+import { getItems } from './../../actions';
 
-import * as meals from '../../../app/models/items'
 import './foodItems.css';
-const foodItems = (props) => (
+
+
+class foodItems extends Component {
+
+    componentDidMount = () => {
+      this.props.getItems();
+    }
+    
+        render() {
+            const items = this.props.t
+            var food;
+            if(items.length >0 ){
+                food = items;
+            }
+            
+    return(
+
     <div className="foodItems">
-        <ul className="list-group">
-           
-            {
-                meals.map((res, i) => (
-                    <FoodItem key={i} itemName={res.name} price={"$"+res.price} img={res.photoUrl}/>
+        <ul>
+        { food? 
+                food.map((res, i) => (
+                    <FoodItem key={i} item={res}/>
                 ))
+                : null
             }
         </ul>
     </div>
 );
+ }
+}
 
-export default foodItems;
+const mapStateToProps = (state) =>{
+    return {
+        t: state.itemsState
+    }
+}
+
+export default connect(mapStateToProps, { getItems }) (foodItems);

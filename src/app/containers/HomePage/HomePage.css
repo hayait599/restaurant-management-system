@@ -8,8 +8,8 @@
     display: flex;
     flex: 0.6;
     flex-direction: column;
-}
-.left-side {
+} 
+ .left-side {
     flex-direction: row-reverse;
     display: flex;
     flex: 0.4;

@@ -1,25 +1,49 @@
-import React from 'react';
-
+import React ,{Component}  from 'react';
 import Member from '../../components/member/member';
-
-import * as data from '../../../app/models/team.json';
+import { connect } from 'react-redux'; 
+import { getTeam } from './../../actions/index';
 import './team.css';
-const Team = () => {
 
- var members =  data.map((res, index) => (
-    <Member key={index} member={res} ></Member>
- ))
+class Team  extends Component {
+
+    state= {
+        members:[]
+    }
     
+  
+    componentDidMount () {
+     
+     
+        this.props.getTeam()
+    }
+    
+    render(){
+        const  { t } = this.props;
        
-        return (
-            
+       
+        if (t != null) {
+          if (t.length > 0) {
 
+   
+            var members =  t.map((res, index) => (
+               <Member key={index} member={res} ></Member>
+            ));
+          }
+        }
+ 
+        return (
             <div className="Team">
-                  {/* {members}               */}
-            </div>
-                
+                  {members}              
+            </div>     
         );
+    }
     
 }
+const mapStateToProps = (state) =>{
+    return {
+        t: state.teamState
+    }
+}
+export default connect(mapStateToProps, { getTeam })(Team);
 
-export default Team;
+
