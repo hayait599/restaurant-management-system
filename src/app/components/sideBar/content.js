@@ -10,7 +10,7 @@ class Content extends Component {
     switch (location) {
       case '/home':
         return (
-          <div className="content">
+          <div className="content-sidebar ">
             <div className="content-text-container">
               <h5>WELCOME </h5>
               <br />
@@ -23,7 +23,7 @@ class Content extends Component {
         // break;
       case '/restaurant':
         return (
-          <div className="content">
+          <div className="content-sidebar ">
             <div className="content-text-container">
               <h5>RESTAURANT </h5>
               <br />
@@ -39,7 +39,7 @@ class Content extends Component {
         )
       case '/menu':
         return (
-          <div className="content">
+          <div className="content-sidebar ">
             <div className="content-text-container">
               <h5>MENU</h5>
               <br />
@@ -55,7 +55,7 @@ class Content extends Component {
         )
       case '/team':
         return (
-          <div className="content">
+          <div className="content-sidebar ">
             <div className="content-text-container">
               <h5>MEET THE TEAM</h5>
               <br />
@@ -67,7 +67,7 @@ class Content extends Component {
         )
       default:
         return (
-          <div className="content" />
+          <div className="content-sidebar " />
         )
     }
   }

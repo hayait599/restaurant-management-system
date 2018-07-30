@@ -1,7 +1,13 @@
 .restaurant-container {
-    background-color: blueviolet;
     display: flex;
-    width: 50%;
+    background-color: brown;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+}
 
-    height: 100%;
+.content {
+    display: flex;
+    background-color: #1e1e1e; 
+    width: 50%;
 }

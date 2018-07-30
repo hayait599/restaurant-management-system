@@ -5,11 +5,14 @@ import Reservation from './reservationForm/reservation';
 import FoodItem from '../components/foodItems/foodItem/foodItem';
 import FoodItems from '../components/foodItems/foodItems';
 
+import RestaurantImage from './restaurantImage/restaurantImage';
+
 export {
   Navbar,
   SideBar,
   Member,
   FoodItem,
   FoodItems,
-  Reservation
+  Reservation,
+  RestaurantImage
 }
