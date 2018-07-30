@@ -13,7 +13,6 @@ class SideBar extends Component {
     return (
       <div className="container-side-bar">
         <Header />
-        {/* {this.renderContent()} */}
         <Content />
         <SideBarFooter />
       </div>

@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom';
 import { Navbar, SideBar } from '../../components';
-import { Menu, Team, Contact, OrderOnline } from '../../containers';
+import { Menu, Team, Contact, OrderOnlinem, Restaurant } from '../../containers';
 
 import './HomePage.css';
+
 
 class HomePage extends Component {
   render() {
@@ -18,7 +19,7 @@ class HomePage extends Component {
               <div className="container-app">
                 <Switch>
                   <Route path="/home" />
-                  <Route path="/restaurent" />
+                  <Route path="/restaurant" component={Restaurant}/>
                   <Route path="/menu" component={Menu} />
                   <Route path="/order-online" component={OrderOnline}  />
                   <Route path="/team" component={Team} />

@@ -6,6 +6,8 @@ import FoodItem from '../components/foodItems/foodItem/foodItem';
 import FoodItems from '../components/foodItems/foodItems';
 import MyOrder from '../components/myOrder/myOrder';
 
+import RestaurantImage from './restaurantImage/restaurantImage';
+
 export {
   Navbar,
   SideBar,
@@ -13,5 +15,5 @@ export {
   FoodItem,
   FoodItems,
   Reservation,
-  MyOrder
+  RestaurantImage
 }

@@ -19,7 +19,7 @@ class Reservation extends Component {
       "6 people",
     ]
     return (
-      <div className="container">
+      <div className="reservation-container">
         <div className="title"> RESERVATIONS </div>
         <div className="form-content">
           <br />
