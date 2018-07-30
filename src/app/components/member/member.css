@@ -3,9 +3,16 @@
     float: left;
     padding: 10px;
     margin: 10px;
-    font-size: 20px;
+    font-size: 13px;
     background-color: #1e1e1e;
     color: white;
+}
+.card-body{
+    background: #1e1e1e;
+}
+.card-img-top{
+    width:100px;
+    height: 100px;
 }
 @media(max-width: 500px){
     .card {
