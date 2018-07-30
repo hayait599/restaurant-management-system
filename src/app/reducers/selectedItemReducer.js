@@ -4,6 +4,6 @@ import { storeSelectedItem } from './../actions/index';
 export const selectedItem = createReducer({
 
     [storeSelectedItem]: (state, payload) => payload,
-  }, null);
+  }, []);
 
   

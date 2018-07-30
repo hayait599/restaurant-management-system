@@ -1,4 +1,30 @@
 .downBorder{
     border-bottom:1px solid white;
-    width: 100%;
+    
+}
+.scroll{
+    height: 50vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    display: block;
+    width: 450px;
+}
+.orderNow:hover{
+    cursor: pointer;
+    color: rgb(105, 103, 100)
+}
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgba(234, 234, 234, 0.4);
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
 }

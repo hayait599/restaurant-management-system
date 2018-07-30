@@ -8,4 +8,4 @@ export const storeTeam = createAction('STORE_TEAM');
 export const getItems = createAction('GET_ITEMS');
 export const storeItems = createAction('STORE_ITEMS');
 export const storeSelectedItem = createAction('STORE_SELECTED_ITEM');
-export const select = createAction('SELECT');
+export const selectIte = createAction('SELECT');

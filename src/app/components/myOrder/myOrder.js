@@ -7,25 +7,55 @@ class MyOrder extends Component {
         state = {
             order: []
         }
-        componentDidMount =() => {
-            this.setState({order:this.state.order.concat(this.props.selected)});
+        componentWillMount =() => {
+            // this.setState({order:this.state.order.concat(this.props.selected)});
+           // console.log("willMount");
+        }
+        componentWillUpdate(){
+            console.log("didMount");
+        }
+        componentWillReceiveProps(){
+            console.log("WillReceiveProps");
+                if(this.props.selected)
+             this.setState({order:this.state.order.concat(this.props.selected)})
+            
+           
         }
 
 
     render () {
-        var order=""
-        if(this.props.selected){
-            console.log(this.props.selected);
-            order=this.props.selected.name;
-        }
-        
+        console.log(this.state)
         return (
             <div className="MyOrder">
                 <div className="downBorder">
                     <h4>My Order</h4>
                 </div>
-                <div className="downBorder">
-                 {order}
+                <div className="">
+                    <div className="row">
+                        <div className="col-9 scroll">
+                           {
+                               this.state.order.map((data, index) => {
+                                   if(data){
+
+                                    return (
+                                        <div key={index} className="row downBorder">
+                                            <div className="col-9">
+                                                 {data.name}
+                                            </div>
+                                            <div className="col-2">
+                                                ${data.price}
+                                            </div>
+                                       </div>
+                                        );
+                                   }
+                                   return <div></div>
+                                  
+                               })
+                           }
+                        </div>
+                    </div>
+                    <br/>
+                    <div className="orderNow">Order Now</div>
                 </div>
             </div>
         );

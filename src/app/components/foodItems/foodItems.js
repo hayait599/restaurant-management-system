@@ -7,17 +7,19 @@ import './foodItems.css';
 
 
 class foodItems extends Component {
-    componentDidMount = () => {
-      this.props.getItems();
+    componentDidMount (){
+       
+        this.props.getItems();
     }
     getItemHandler(i) {
       this.props.storeSelectedItem(this.props.t[i]);
 
     }
+
+      
+
         render() {
-            if(this.props.selected){
-                console.log(this.props.selected);
-            }
+           
             const items = this.props.t
             var food;
             if(items.length >0 ){
