@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux'; 
-import { deleteSelectedItem, getItems,storeTotalPrice } from './../../actions';
+import { deleteSelectedItem, getItems } from './../../actions';
 
 import './myOrder.css';
 class MyOrder extends Component {
@@ -30,12 +30,15 @@ class MyOrder extends Component {
                                
                                selectedItems.map((data,index) => {                                    
                                    return (
-                                       <div className="row downBorder" onClick={this.deleteSelectedItemHandler.bind(this,data)} key={index}>
+                                       <div className="row downBorder"  key={index}>
                                         <div className="col-8">
                                             {data.item.name}
                                         </div>
                                         <div className="col-3">
                                             ${data.item.price}
+                                        </div>
+                                        <div className="col-1 delete" onClick={this.deleteSelectedItemHandler.bind(this,data)}>
+                                            delete
                                         </div>
                                                                                   
                                        </div>
