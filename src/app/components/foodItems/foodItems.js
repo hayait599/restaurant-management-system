@@ -12,7 +12,13 @@ class foodItems extends Component {
         this.props.getItems();
     }
     getItemHandler(i) {
-      this.props.storeSelectedItem(this.props.t[i]);
+     var id =  Math.floor(Math.random() * 9999);
+    var data = {
+         id: id,
+         item: this.props.t[i]
+     }
+    //  console.log(data);
+      this.props.storeSelectedItem(data);
 
     }
 

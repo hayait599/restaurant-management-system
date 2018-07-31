@@ -15,5 +15,6 @@ export {
   FoodItem,
   FoodItems,
   Reservation,
+  MyOrder,
   RestaurantImage
 }

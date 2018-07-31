@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
 
-import './foodItems.css';
+import './restaurantImage.css';
 
 
 class RestaurantImage extends Component {

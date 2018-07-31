@@ -1,30 +1,23 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux'; 
+import { deleteSelectedItem, getItems,storeTotalPrice } from './../../actions';
 
 import './myOrder.css';
 class MyOrder extends Component {
 
-        state = {
-            order: []
-        }
-        componentWillMount =() => {
-            // this.setState({order:this.state.order.concat(this.props.selected)});
-           // console.log("willMount");
-        }
-        componentWillUpdate(){
-            console.log("didMount");
-        }
-        componentWillReceiveProps(){
-            console.log("WillReceiveProps");
-                if(this.props.selected)
-             this.setState({order:this.state.order.concat(this.props.selected)})
-            
-           
-        }
+       
+    
+   deleteSelectedItemHandler = (data) => {
+    // console.log("delete", data);
+        this.props.deleteSelectedItem(data);
+        this.props.getItems();
+        // this.props.getTotalPrice();
+   }
+
 
 
     render () {
-        console.log(this.state)
+      var selectedItems = this.props.selected;
         return (
             <div className="MyOrder">
                 <div className="downBorder">
@@ -34,27 +27,25 @@ class MyOrder extends Component {
                     <div className="row">
                         <div className="col-9 scroll">
                            {
-                               this.state.order.map((data, index) => {
-                                   if(data){
-
-                                    return (
-                                        <div key={index} className="row downBorder">
-                                            <div className="col-9">
-                                                 {data.name}
-                                            </div>
-                                            <div className="col-2">
-                                                ${data.price}
-                                            </div>
+                               
+                               selectedItems.map((data,index) => {                                    
+                                   return (
+                                       <div className="row downBorder" onClick={this.deleteSelectedItemHandler.bind(this,data)} key={index}>
+                                        <div className="col-8">
+                                            {data.item.name}
+                                        </div>
+                                        <div className="col-3">
+                                            ${data.item.price}
+                                        </div>
+                                                                                  
                                        </div>
-                                        );
-                                   }
-                                   return <div></div>
-                                  
+                                   );
                                })
                            }
                         </div>
                     </div>
                     <br/>
+                    Total Price: ${ this.props.totalPrice ? this.props.totalPrice : null }
                     <div className="orderNow">Order Now</div>
                 </div>
             </div>
@@ -62,11 +53,13 @@ class MyOrder extends Component {
     }
 }
 
-const mapStateToProps = (state) =>{
+const mapStateToProps = (state) => {
     return {
         t: state.itemsState,
-        selected: state.selectedItem
+        selected: state.selectedItem,
+        totalPrice: state.totalPrice
+      
     }
 }
 
-export default connect(mapStateToProps,null) (MyOrder);
+export default connect(mapStateToProps,{ deleteSelectedItem, getItems }) (MyOrder);

@@ -1,4 +1,3 @@
-
 import { createAction } from 'redux-act';
 
 export const testAction = createAction('USED_FOR_TESTING');
@@ -9,3 +8,5 @@ export const getItems = createAction('GET_ITEMS');
 export const storeItems = createAction('STORE_ITEMS');
 export const storeSelectedItem = createAction('STORE_SELECTED_ITEM');
 export const selectIte = createAction('SELECT');
+export const storeTotalPrice = createAction("STORE_TOTAL_PRICE");
+export const deleteSelectedItem = createAction("DELETE_SELECTED_ITEM");
