@@ -4,4 +4,4 @@ import { storeTotalPrice } from './../actions/index';
 export const totalPriceReducer = createReducer({
 
     [storeTotalPrice]: (state, payload) => payload,
-  }, []);
+  },0);

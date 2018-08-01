@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux'; 
-import { deleteSelectedItem, getItems } from './../../actions';
+import { deleteSelectedItem, getItems, order } from './../../actions';
 
 import './myOrder.css';
 class MyOrder extends Component {
@@ -14,7 +14,9 @@ class MyOrder extends Component {
         // this.props.getTotalPrice();
    }
 
-
+   orderNowHandler = () => {
+       this.props.order();
+   }
 
     render () {
       var selectedItems = this.props.selected;
@@ -49,7 +51,7 @@ class MyOrder extends Component {
                     </div>
                     <br/>
                     Total Price: ${ this.props.totalPrice ? this.props.totalPrice : null }
-                    <div className="orderNow">Order Now</div>
+                    <div className="orderNow" onClick={this.orderNowHandler}><strong>Order Now</strong></div>
                 </div>
             </div>
         );
@@ -65,4 +67,4 @@ const mapStateToProps = (state) => {
     }
 }
 
-export default connect(mapStateToProps,{ deleteSelectedItem, getItems }) (MyOrder);
+export default connect(mapStateToProps,{ deleteSelectedItem, getItems, order }) (MyOrder);

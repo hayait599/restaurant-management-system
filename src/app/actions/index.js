@@ -10,3 +10,5 @@ export const storeSelectedItem = createAction('STORE_SELECTED_ITEM');
 export const selectIte = createAction('SELECT');
 export const storeTotalPrice = createAction("STORE_TOTAL_PRICE");
 export const deleteSelectedItem = createAction("DELETE_SELECTED_ITEM");
+export const order = createAction("ORDER");
+export const orderStore = createAction("ORDER_STORE");

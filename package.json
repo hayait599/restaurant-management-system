@@ -8,6 +8,7 @@
     "firebase": "^5.3.0",
     "lodash": "^4.17.10",
     "react": "^16.4.1",
+    "react-alert": "^4.0.4",
     "react-dom": "^16.4.1",
     "react-icons": "^2.2.7",
     "react-redux": "^5.0.7",

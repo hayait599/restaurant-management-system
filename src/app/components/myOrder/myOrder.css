@@ -9,6 +9,12 @@
     display: block;
     width: 450px;
 }
+.orderNow{
+    text-align: center;
+    background: white;
+    color: #1e1e1e;
+    width: 100px;
+}
 .orderNow:hover{
     cursor: pointer;
     color: rgb(105, 103, 100)
