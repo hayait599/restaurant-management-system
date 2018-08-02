@@ -12,3 +12,4 @@ export const storeTotalPrice = createAction("STORE_TOTAL_PRICE");
 export const deleteSelectedItem = createAction("DELETE_SELECTED_ITEM");
 export const order = createAction("ORDER");
 export const orderStore = createAction("ORDER_STORE");
+export const flag = createAction("FLAG");

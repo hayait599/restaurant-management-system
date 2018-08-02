@@ -13,7 +13,8 @@ const rootReducer = combineReducers({
   selectedItem: selectedItem,
   totalPrice: totalPriceReducer,
   deleteItem: deleteSelected,
-  order: orderReducer
+  order: orderReducer,
+  
 });
 
 export default rootReducer;

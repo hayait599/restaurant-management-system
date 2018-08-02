@@ -7,15 +7,22 @@ function* orderFunction() {
   try {
     const oldReddit = yield select();
 
-   console.log("orderNow", oldReddit);
+//    console.log("orderNow", oldReddit);
    var id =  Math.floor(Math.random() * 9999);
    var order = {
        id: id,
        items: oldReddit.selectedItem,
        price: oldReddit.totalPrice
    }
-   console.log(order);
-  yield axios.post('/Orders.json',order);
+   if(order.price !== 0)
+   {
+    yield axios.post('/Orders.json',order);
+   }
+   else{
+       console.log(oldReddit);
+       console.log("Please select items.");
+   }
+  
   } catch (error) {
     yield console.log(error);
   }
